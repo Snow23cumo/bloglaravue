@@ -23,12 +23,13 @@ const store = new Vuex.Store(
     storeData
 );
 // moment js
-import {filter} from './filter';
+import { filter } from './filter';
 
 
 // Componentes
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('admin-main', require('./components/admin/AdminMaster.vue').default);
+Vue.component('home-main', require('./components/public/PublicMaster.vue').default);
 
 // SweetAlert 2
 import Swal from 'sweetalert2';
